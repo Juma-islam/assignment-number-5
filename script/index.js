@@ -30,7 +30,7 @@ for (let callButton of callButtons) {
         alert(`📞 Calling  ${serviceName}  ${serviceNumber}`)
         const callHistory = document.getElementById('call-history');
         const newCart = document.createElement('div');
-        newCart.innerHTML = ` <div class=" bg-white  mt-9 ">
+        newCart.innerHTML = ` <div class=" bg-white  mt-9">
 <h2 class="font-bold font-hind">${serviceName}</h2>
 <h2 class="font-bold mt-4 text-xl font-roboto ">${serviceNumber}</h2>
                      </div>`
