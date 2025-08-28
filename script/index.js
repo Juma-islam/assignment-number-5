@@ -57,11 +57,11 @@ for (let copyClick of copyClicks) {
     copyClick.addEventListener('click', function () {
         counts++;
         copyBtn.innerText = counts;
-        
-         const parent =copyClick.parentElement;
+
+        const parent = copyClick.parentElement;
         const serNum = parent.querySelector('.service-number').innerText;
-     navigator.clipboard.writeText(serNum);
-alert(`this number is copied ${serNum}`);
+        navigator.clipboard.writeText(serNum);
+        alert(`this number is copied ${serNum}`);
     })
 
 }
