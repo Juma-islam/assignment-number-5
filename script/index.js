@@ -30,13 +30,14 @@ for (let callButton of callButtons) {
         alert(`📞 Calling  ${serviceName}  ${serviceNumber}`)
         const callHistory = document.getElementById('call-history');
         const newCart = document.createElement('div');
-        newCart.innerHTML = ` <div class=" bg-white  mt-9">
+        newCart.className = " bg-white mt-4 flex justify-between items-center bg-white w-[100%] shadow-sm p-5 rounded-lg"
+        newCart.innerHTML = ` <div class=" bg-white  mt-4">
 <h2 class="font-bold font-hind">${serviceName}</h2>
 <h2 class="font-bold mt-4 text-xl font-roboto ">${serviceNumber}</h2>
                      </div>`
         // time Setting 
         const now = new Date();
-        const timeElement = document.createElement('p');
+        const timeElement = document.createElement('div');
         timeElement.innerText = `${now.toLocaleTimeString()}`;
         newCart.appendChild(timeElement);
         callHistory.appendChild(newCart);
